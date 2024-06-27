@@ -8,8 +8,8 @@ const app = express();
 
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.set('/views', express.static(process.cwd() + '/views'));
-app.use('/public', express.static(process.cwd() + '/public'));
+// app.set('/views', express.static(process.cwd() + '/views'));
+app.use(express.static('public'));
 
 // API Endpoint
 app.use('/', router);
