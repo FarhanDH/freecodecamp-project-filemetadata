@@ -5,14 +5,16 @@
     "main": "index.js",
     "scripts": {
         "start": "node src/index.js",
-        "start:dev": "nodemon src/index.js"
+        "start:dev": "nodemon src/index.js",
+        "vercel-build": "echo hello"
     },
     "dependencies": {
         "body-parser": "^1.20.2",
         "cors": "^2.8.5",
         "dotenv": "^8.2.0",
         "express": "^4.16.4",
-        "multer": "^1.4.5-lts.1"
+        "multer": "^1.4.5-lts.1",
+        "vercel": "^34.2.8"
     },
     "repository": {
         "type": "git",
